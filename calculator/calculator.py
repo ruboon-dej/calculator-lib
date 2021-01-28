@@ -3,12 +3,14 @@ import math
 def calculate(fnum, process, snum):
     if process == "+":
         result = fnum + snum
+    elif process == "-":
+        result = fnum - snum
     elif process == "/":
         result = fnum / snum
     elif process == "*":
       result = fnum * snum
     elif process == "**":
-        result = fnum * snum
+        result = fnum ** snum
     elif process == "root":
         result = math.sqrt(fnum)
     else:
